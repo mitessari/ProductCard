@@ -1,0 +1,38 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 30em;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 5px;
+  max-height: 400px;
+}
+
+.title {
+  font-family: "Fraunces", serif;
+  font-size: 25px;
+}
+
+.card-image {
+  display: flex;
+  flex-direction: row;
+  width: 250%;
+}
+
+img {
+  border-radius: 5px 0 0 5px;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  padding: 0px 30px 30px 30px;
+  text-align: left;
+}
