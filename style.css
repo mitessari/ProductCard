@@ -19,14 +19,19 @@ body {
   font-size: 25px;
 }
 
-.card-image {
+.card-image > img {
+  overflow: hidden;
   display: flex;
   flex-direction: row;
-  width: 250%;
+  width: 100%;
+  border-radius: 5px 0 0 5px;
+  object-fit: cover;
+  max-height: 1000px;
+  object-position: center;
+  padding: 0;
 }
 
 img {
-  border-radius: 5px 0 0 5px;
 }
 
 .card-text {
