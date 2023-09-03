@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  font-family: "Outfit", sans-serif;
+}
+
 body {
   background-color: hsl(30, 38%, 92%);
   display: flex;
@@ -100,7 +106,9 @@ button {
   color: white;
 }
 
-button :hover {
+button:hover {
+  background-color: hsl(158, 67%, 14%);
+  cursor: pointer;
 }
 
 .footer {
@@ -124,13 +132,15 @@ button :hover {
   .card {
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 560px;
+    width: 500px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     border-radius: 5px;
-    max-height: 100vh;
+    height: auto;
   }
 
   h3 {
@@ -215,7 +225,9 @@ button :hover {
     color: white;
   }
 
-  button :hover {
+  button:hover {
+    background-color: hsl(158, 67%, 14%);
+    cursor: pointer;
   }
 
   .footer {
