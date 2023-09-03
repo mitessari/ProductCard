@@ -178,8 +178,8 @@ button:hover {
 
   img {
     content: url(image-product-mobile.jpg);
-    width: 280px;
     object-fit: cover;
+    width: 100%;
     height: auto;
   }
 
@@ -231,7 +231,6 @@ button:hover {
   }
 
   .footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     padding: 20px;
