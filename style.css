@@ -1,14 +1,15 @@
-*,
-*::before,
-*::after {
-  font-family: "Outfit", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: hsl(30, 38%, 92%);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
+  height: 100vh;
 }
 
 .product-card {
@@ -17,32 +18,40 @@ body {
   width: 560px;
   margin: auto;
   display: flex;
+  justify-content: center;
   flex-direction: row;
   background-color: white;
   border-radius: 6px;
-  max-height: 150vh;
+}
+
+.product-description {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  padding: 1.5rem;
+  gap: 1rem;
 }
 
 h3 {
-  letter-spacing: 5px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.3rem;
+  font-weight: 500;
   font-size: 0.8rem;
   text-transform: uppercase;
-  font-weight: lighter;
   color: grey;
 }
 
 h1 {
   font-family: "Fraunces", serif;
-  font-size: 1.8rem;
-  line-height: 28px;
+  font-size: 1.75rem;
 }
 
 p {
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   color: rgb(168, 166, 166);
   font-weight: 510;
   line-height: 1.3rem;
-  font-weight: normal;
 }
 
 .card-image {
@@ -55,35 +64,27 @@ p {
 
 img {
   width: 280px;
+  height: auto;
   object-fit: cover;
-}
-
-.product-description {
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  font-family: "Montserrat", sans-serif;
-  text-align: left;
-  padding: 1.7rem;
 }
 
 .price-container {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  padding: 1.8rem;
 }
 
 #newprice {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 2rem;
   color: hsl(158, 36%, 37%);
   font-family: "Fraunces", serif;
 }
 
 #oldprice {
   text-align: right;
-  font-size: 12px;
+  font-size: 0.8rem;
+  font-weight: 510;
   text-decoration: line-through;
   color: rgb(168, 166, 166);
   font-family: "Montserrat", sans-serif;
@@ -107,7 +108,7 @@ button:hover {
   cursor: pointer;
 }
 
-.footer {
+footer {
   position: fixed;
   left: 0;
   bottom: 0;
